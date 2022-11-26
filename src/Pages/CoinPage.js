@@ -50,7 +50,7 @@ const CoinPage = () => {
         />
         <Typography variant="h3" className="heading">{coin.name}</Typography>
         <Typography variant="subtitle1" className="description">
-          {parse(coin.description.en.split(". ")[0] + coin.description.en.split(". ")[1])}
+          {parse(coin.description.en.split(". ")[0])}
         </Typography>
         <div className="marketData">
           <span

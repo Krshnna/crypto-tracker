@@ -69,6 +69,7 @@
   font-family: Monserrat;
 }
 .sidebar .description {
+  display: flex;
   width: 100%;
   padding: 25px;
   padding-bottom: 15px;

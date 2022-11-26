@@ -85,6 +85,7 @@
   padding: 25px;
   padding-top: 10;
   width: 100%;
+  margin-left: 25px; 
 }
 
 .info-container {
@@ -124,6 +125,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-left: 25px;
   }
   .info-container {
     width: 100%;

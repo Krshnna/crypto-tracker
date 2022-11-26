@@ -36,7 +36,7 @@ import {
                 variant="h6"
                 className="title"
               >
-                Tracker Your Future
+                Track Your Future
               </Typography>
               <Select
                 variant="outlined"

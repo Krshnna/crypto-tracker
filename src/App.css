@@ -17,7 +17,7 @@
   cursor: pointer;
 }
 .banner {
-  background-image: url('D:\mine\src\image\banner2.jpg');
+  background-image: url('/public/banner2.jpg');
 }
 .bannerContainer {
   height: 400px;

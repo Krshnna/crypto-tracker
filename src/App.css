@@ -129,15 +129,15 @@
     padding: 20px;
     padding-top: 0;
   }
-  @media screen and (max-width: 600px) {
-    .marketData {
-      align-items: flex-start;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .marketData {
-      align-items: flex-start;
-    }
-  }
 }
+@media screen and (max-width: 600px) {
+    .marketData {
+      align-items: flex-start;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .marketData {
+      align-items: flex-start;
+    }
+  }
 

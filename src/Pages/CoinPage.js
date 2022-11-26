@@ -1,10 +1,11 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 
 import { useParams } from "react-router-dom";
 import { CrytoState } from "../CrytoContext";
 import axios from "axios";
 import { SingleCoin } from "../config/api";
 import { useEffect, useState } from "react";
-import {LinearProgress, Typography } from "@mui/material";
+import { LinearProgress, Typography } from "@mui/material";
 import CoinInfo from "../components/CoinInfo";
 
 const CoinPage = () => {
@@ -35,7 +36,7 @@ const CoinPage = () => {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
-  const parse = require('html-react-parser')
+  const parse = require("html-react-parser");
 
   return (
     <div className="container">
@@ -48,7 +49,9 @@ const CoinPage = () => {
             marginBottom: 20,
           }}
         />
-        <Typography variant="h3" className="heading">{coin.name}</Typography>
+        <Typography variant="h3" className="heading">
+          {coin.name}
+        </Typography>
         <Typography variant="subtitle1" className="description">
           {parse(coin.description.en.split(". ")[0])}
         </Typography>
@@ -56,9 +59,12 @@ const CoinPage = () => {
           <span
             style={{
               display: "flex",
+              fontFamily: "Montserrat"
             }}
           >
-            <Typography variant="h5" className="heading">Rank:</Typography>
+            <Typography variant="h5" className="heading">
+              Rank:
+            </Typography>
             &nbsp; &nbsp;
             <Typography
               variant="h5"
@@ -75,24 +81,27 @@ const CoinPage = () => {
               display: "flex",
             }}
           >
-            <Typography variant="h5" className="heading">Currency Price:</Typography>
+            <Typography variant="h5" className="heading">
+              Currency Price:
+            </Typography>
             &nbsp; &nbsp;
-            <Typography
-              variant="h5"
-            >
+            <Typography variant="h5">
               {symbol}{" "}
               {setComma(coin.market_data.current_price[currency.toLowerCase()])}
             </Typography>
             &nbsp; &nbsp;
           </span>
-          <span style={{
-            display: "flex"
-          }}>
-            <Typography variant="h5" className="heading">Market Cap:</Typography>
+          <span
+            style={{
+              display: "flex",
+              fontFamily: "Montserrat"
+            }}
+          >
+            <Typography variant="h5" className="heading">
+              Market Cap:
+            </Typography>
             &nbsp; &nbsp;
-            <Typography
-              variant="h5"
-            >
+            <Typography variant="h5">
               {symbol}{" "}
               {setComma(
                 coin?.market_data.market_cap[currency.toLowerCase()]
@@ -103,9 +112,9 @@ const CoinPage = () => {
             &nbsp; &nbsp;
           </span>
         </div>
+        </div>
+        <CoinInfo coin={coin} />
       </div>
-      <CoinInfo coin={coin}/>
-    </div>
   );
 };
 

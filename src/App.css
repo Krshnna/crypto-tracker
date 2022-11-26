@@ -1,38 +1,143 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Montserrat:wght@300;400;800&display=swap");
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.classes {
+  background-color: #14161a;
+  color: #fff;
+  min-height: 100vh;
+}
+.title {
+  flex: 1;
+  color: gold;
+  font-weight: 900;
+  cursor: pointer;
+}
+.banner {
+  background-image: url('D:\mine\src\image\banner2.jpg');
+}
+.bannerContainer {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  justify-content: space-around;
+}
+.tagLine {
+  display: flex;
+  height: 40%;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.carousel {
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+.linkItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 900;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  width: 100%;
+  display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  border-right: 2px solid grey;
+}
+.sidebar .heading {
+  font-weight: bolder;
+  margin-bottom: 20px;
+  font-family: Monserrat;
+}
+.sidebar .description {
+  width: 100%;
+  padding: 25px;
+  padding-bottom: 15px;
+  padding-top: 0;
+  text-align: justify;
+  text-transform: capitalize;
+}
+.marketData{
+  align-self: flex-start;
+  padding: 25px;
+  padding-top: 10;
+  width: 100%;
+}
+
+.info-container {
+  width: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 25px;
+  padding: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.hov:hover {
+  background-color: gold;
+  color: black;
+  font-weight: 700;
+} 
+
+.row {
+  background-color: #16171a;
+  cursor: pointer;
+}
+.row:hover {
+  background-color: #131111;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+@media screen and (max-width: 1280px){
+  .container {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  .sidebar {
+    width: 100%;
+  }
+  .marketData {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .info-container {
+    width: 100%;
+    margin-top: 0;
+    padding: 20px;
+    padding-top: 0;
+  }
+  @media screen and (max-width: 600px) {
+    .marketData {
+      align-items: flex-start;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .marketData {
+      align-items: flex-start;
+    }
   }
 }
+

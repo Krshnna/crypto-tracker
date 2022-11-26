@@ -69,7 +69,6 @@
   font-family: Monserrat;
 }
 .sidebar .description {
-  display: flex;
   width: 100%;
   padding: 25px;
   padding-bottom: 15px;
@@ -78,7 +77,6 @@
   text-transform: capitalize;
 }
 .marketData{
-  align-self: flex-start;
   padding: 25px;
   padding-top: 10;
   width: 100%;
@@ -108,8 +106,6 @@
   background-color: #131111;
 }
 
-
-
 @media screen and (max-width: 1280px){
   .container {
     flex-direction: column;
@@ -119,6 +115,7 @@
     width: 100%;
   }
   .marketData {
+    align-self: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,13 +129,8 @@
   }
 }
 @media screen and (max-width: 600px) {
-    .marketData {
-      align-items: flex-start;
-    }
+  .marketData {
+    align-items: flex-start;
   }
-  @media screen and (max-width: 600px) {
-    .marketData {
-      align-items: flex-start;
-    }
-  }
+}
 

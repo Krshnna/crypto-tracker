@@ -115,11 +115,8 @@
     width: 100%;
   }
   .marketData {
-    align-self: auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
   }
   .info-container {
     width: 100%;

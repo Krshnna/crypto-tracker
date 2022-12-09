@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component }  from 'react';
 import { useParams } from "react-router-dom";
 import { CrytoState } from "../CrytoContext";
 import axios from "axios";
@@ -78,9 +78,6 @@ const CoinPage = () => {
             &nbsp; &nbsp;
             <Typography
               variant="h5"
-              style={{
-                fontFamily: "Montserrat",
-              }}
             >
               {symbol}{" "}
               {setComma(coin.market_data.current_price[currency.toLowerCase()])}
@@ -94,9 +91,6 @@ const CoinPage = () => {
             &nbsp; &nbsp;
             <Typography
               variant="h5"
-              style={{
-                fontFamily: "Montserrat",
-              }}
             >
               {symbol}{" "}
               {setComma(

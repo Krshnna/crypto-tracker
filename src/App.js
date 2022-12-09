@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./component/Header";
 import CoinPage from "./Pages/CoinPage";
 import HomePage from "./Pages/HomePage";
+import React, { Component }  from 'react';
 import "./styles/App.css"
 function App() {
   return (
